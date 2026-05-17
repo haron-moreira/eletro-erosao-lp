@@ -1,0 +1,134 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--navbar-height);
+  background: transparent;
+  transition: background var(--transition-base), box-shadow var(--transition-base);
+}
+
+.navbar.scrolled {
+  background: rgba(8, 12, 20, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--color-border);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Logo */
+.logo {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.logoAccent {
+  color: var(--color-accent-blue-light);
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.navLink {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--color-text-primary);
+}
+
+.navCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: #fff;
+  background: var(--gradient-orange);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.navCta:hover {
+  box-shadow: var(--shadow-orange);
+  transform: translateY(-1px);
+}
+
+/* Mobile toggle */
+.menuToggle {
+  display: none;
+  background: none;
+  color: var(--color-text-primary);
+  font-size: 1.75rem;
+  padding: 4px;
+  z-index: 101;
+}
+
+.overlay {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .menuToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(320px, 100vw);
+    height: 100vh;
+    background: var(--color-bg-secondary);
+    border-left: 1px solid var(--color-border);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: calc(var(--navbar-height) + var(--spacing-xl)) var(--spacing-2xl) var(--spacing-2xl);
+    gap: var(--spacing-xl);
+    transition: right var(--transition-slow);
+    z-index: 100;
+  }
+
+  .nav.navOpen {
+    right: 0;
+  }
+
+  .navLink {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-primary);
+  }
+
+  .navCta {
+    font-size: var(--font-size-base);
+    padding: 12px 28px;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+  }
+}
