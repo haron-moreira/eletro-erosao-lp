@@ -28,6 +28,13 @@ export const services = [
       'Modernização e atualização eletrônica de máquinas antigas com novas tecnologias e melhorias.',
   },
   {
+    id: 'venda-maquinas',
+    icon: 'MdPrecisionManufacturing',
+    title: 'Venda de Máquinas EDM',
+    description:
+      'Máquinas de eletroerosão novas e seminovas com garantia e suporte técnico completo pós-venda.',
+  },
+  {
     id: 'pecas',
     icon: 'MdInventory',
     title: 'Venda de Peças e Consumíveis',

@@ -5,16 +5,17 @@
 }
 
 .card {
-  background: var(--gradient-card);
+  background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: var(--spacing-2xl) var(--spacing-xl);
   text-align: center;
+  box-shadow: var(--shadow-card);
   transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
 }
 
 .card:hover {
-  border-color: var(--color-accent-blue);
+  border-color: var(--color-accent-lime-dark);
   box-shadow: var(--shadow-card-hover);
   transform: translateY(-6px);
 }
@@ -26,19 +27,19 @@
   width: 72px;
   height: 72px;
   border-radius: var(--radius-lg);
-  background: rgba(29, 111, 219, 0.12);
-  border: 1px solid rgba(29, 111, 219, 0.25);
+  background: var(--color-tint-lime);
+  border: 1px solid var(--color-accent-lime-dark);
   margin: 0 auto var(--spacing-lg);
   transition: background var(--transition-base);
 }
 
 .card:hover .iconWrapper {
-  background: rgba(29, 111, 219, 0.25);
+  background: var(--color-tint-lime-strong);
 }
 
 .icon {
   font-size: 2.25rem;
-  color: var(--color-accent-blue-light);
+  color: var(--color-accent-blue);
 }
 
 .subtitle {
@@ -47,7 +48,7 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-accent-blue-light);
+  color: var(--color-accent-lime-dark);
   margin-bottom: var(--spacing-sm);
 }
 
@@ -87,7 +88,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--color-accent-blue);
+  background: var(--color-accent-lime-dark);
   flex-shrink: 0;
 }
 

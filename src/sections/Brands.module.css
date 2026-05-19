@@ -22,7 +22,7 @@
 }
 
 .brandCard:hover {
-  border-color: var(--color-accent-blue);
+  border-color: var(--color-accent-lime-dark);
   background: var(--color-bg-card-hover);
   box-shadow: var(--shadow-card-hover);
   transform: translateY(-3px);
@@ -39,7 +39,7 @@
 }
 
 .brandCard:hover .brandName {
-  color: var(--color-accent-blue-light);
+  color: var(--color-accent-blue);
 }
 
 @media (max-width: 900px) {

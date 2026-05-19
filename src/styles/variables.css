@@ -1,25 +1,43 @@
 :root {
-  /* Colors */
-  --color-bg-primary: #080c14;
-  --color-bg-secondary: #0f1623;
-  --color-bg-card: #131d2e;
-  --color-bg-card-hover: #1a2540;
-  --color-accent-blue: #1d6fdb;
-  --color-accent-blue-light: #3d8ef0;
-  --color-accent-orange: #f97316;
+  /* Backgrounds (light theme) */
+  --color-bg-primary: #faf9f5;        /* off-white warm */
+  --color-bg-secondary: #f1efe8;      /* alt section */
+  --color-bg-card: #ffffff;           /* white card */
+  --color-bg-card-hover: #f7f5ec;     /* subtle hover tint */
+  --color-bg-dark: #0b2545;           /* used for CTA / contrast block */
+
+  /* Brand accents */
+  --color-accent-blue: #0b2545;       /* deep navy (was blue) — used for headings/buttons */
+  --color-accent-blue-light: #1b3a6b; /* lighter navy */
+  --color-accent-lime: #c5dc4d;       /* lime — signature accent from logo bolt */
+  --color-accent-lime-dark: #a8c238;  /* lime hover/border */
+  --color-accent-orange: #f97316;     /* CTA orange */
   --color-accent-orange-dark: #ea6a08;
-  --color-border: #1e3354;
-  --color-border-light: #2a4a70;
-  --color-text-primary: #f1f5f9;
-  --color-text-secondary: #94a3b8;
-  --color-text-muted: #64748b;
+
+  /* Tints (alpha overlays for icon bgs, hovers) */
+  --color-tint-lime: rgba(197, 220, 77, 0.22);
+  --color-tint-lime-strong: rgba(197, 220, 77, 0.4);
+  --color-tint-navy: rgba(11, 37, 69, 0.08);
+  --color-tint-navy-strong: rgba(11, 37, 69, 0.14);
+
+  /* Borders */
+  --color-border: #e6e2d6;            /* warm gray */
+  --color-border-light: #efece2;
+  --color-border-strong: #d2cdbb;
+
+  /* Text */
+  --color-text-primary: #0b2545;      /* navy graphite */
+  --color-text-secondary: #4a5a72;
+  --color-text-muted: #7d8b9f;
+  --color-text-on-dark: #f5f3eb;      /* for dark CTA block */
 
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #080c14 0%, #0d1a30 50%, #0a1525 100%);
-  --gradient-card: linear-gradient(135deg, #131d2e 0%, #1a2540 100%);
-  --gradient-accent: linear-gradient(135deg, #1d6fdb 0%, #3d8ef0 100%);
+  --gradient-hero: linear-gradient(180deg, #faf9f5 0%, #f3f1ea 100%);
+  --gradient-card: linear-gradient(135deg, #ffffff 0%, #f7f5ec 100%);
+  --gradient-accent: linear-gradient(135deg, #c5dc4d 0%, #a8c238 100%);
   --gradient-orange: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
-  --gradient-section-alt: linear-gradient(180deg, #080c14 0%, #0a1020 100%);
+  --gradient-dark: linear-gradient(135deg, #0b2545 0%, #143765 50%, #0d2a52 100%);
+  --gradient-section-alt: linear-gradient(180deg, #faf9f5 0%, #efece2 100%);
 
   /* Typography */
   --font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -52,11 +70,12 @@
   --radius-xl: 16px;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
-  --shadow-card-hover: 0 8px 40px rgba(29, 111, 219, 0.2);
-  --shadow-orange: 0 4px 24px rgba(249, 115, 22, 0.3);
-  --shadow-orange-hover: 0 8px 40px rgba(249, 115, 22, 0.5);
+  /* Shadows (soft, light-theme calibrated) */
+  --shadow-card: 0 2px 8px rgba(11, 37, 69, 0.06), 0 8px 24px rgba(11, 37, 69, 0.05);
+  --shadow-card-hover: 0 4px 12px rgba(11, 37, 69, 0.08), 0 16px 40px rgba(11, 37, 69, 0.1);
+  --shadow-orange: 0 4px 16px rgba(249, 115, 22, 0.3);
+  --shadow-orange-hover: 0 8px 28px rgba(249, 115, 22, 0.45);
+  --shadow-lime: 0 4px 16px rgba(168, 194, 56, 0.25);
 
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -65,5 +84,5 @@
 
   /* Layout */
   --container-max: 1200px;
-  --navbar-height: 72px;
+  --navbar-height: 88px;
 }

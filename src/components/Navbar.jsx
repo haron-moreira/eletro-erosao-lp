@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { MdMenu, MdClose } from 'react-icons/md'
 import { FaWhatsapp } from 'react-icons/fa'
 import { WA_URL } from '../utils/whatsapp'
+import logoPrimary from '../assets/logo-primary.webp'
 import styles from './Navbar.module.css'
 
 const NAV_LINKS = [
@@ -28,8 +29,8 @@ export default function Navbar() {
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
-        <a href="#hero" className={styles.logo} onClick={closeMenu}>
-          <span className={styles.logoAccent}>Eletro</span>Erosão
+        <a href="#hero" className={styles.logo} onClick={closeMenu} aria-label="Eletroerosão Sérgio Amorim">
+          <img src={logoPrimary} alt="Eletroerosão Sérgio Amorim" className={styles.logoImg} />
         </a>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>

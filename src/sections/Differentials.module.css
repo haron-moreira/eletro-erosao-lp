@@ -8,10 +8,11 @@
   display: flex;
   gap: var(--spacing-lg);
   align-items: flex-start;
-  background: var(--gradient-card);
+  background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--spacing-xl);
+  box-shadow: var(--shadow-card);
   transition:
     border-color var(--transition-base),
     box-shadow var(--transition-base),
@@ -19,7 +20,7 @@
 }
 
 .card:hover {
-  border-color: var(--color-accent-blue);
+  border-color: var(--color-accent-lime-dark);
   box-shadow: var(--shadow-card-hover);
   transform: translateY(-3px);
 }
@@ -32,18 +33,18 @@
   width: 48px;
   height: 48px;
   border-radius: var(--radius-md);
-  background: rgba(29, 111, 219, 0.12);
-  border: 1px solid rgba(29, 111, 219, 0.2);
+  background: var(--color-tint-lime);
+  border: 1px solid var(--color-accent-lime-dark);
   transition: background var(--transition-base);
 }
 
 .card:hover .iconWrapper {
-  background: rgba(29, 111, 219, 0.22);
+  background: var(--color-tint-lime-strong);
 }
 
 .icon {
   font-size: 1.5rem;
-  color: var(--color-accent-blue-light);
+  color: var(--color-accent-blue);
 }
 
 .title {

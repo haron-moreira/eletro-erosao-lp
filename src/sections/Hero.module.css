@@ -13,21 +13,22 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(29, 111, 219, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(29, 111, 219, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(11, 37, 69, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 37, 69, 0.05) 1px, transparent 1px);
   background-size: 60px 60px;
   pointer-events: none;
+  mask-image: radial-gradient(ellipse at 50% 30%, #000 35%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 35%, transparent 80%);
 }
 
-/* Blue glow */
+/* Lime accent glow */
 .glow {
   position: absolute;
-  top: -20%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 800px;
-  height: 600px;
-  background: radial-gradient(ellipse at center, rgba(29, 111, 219, 0.15) 0%, transparent 70%);
+  top: -10%;
+  right: -10%;
+  width: 720px;
+  height: 540px;
+  background: radial-gradient(ellipse at center, rgba(197, 220, 77, 0.28) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -46,9 +47,9 @@
   gap: 8px;
   font-size: var(--font-size-sm);
   font-weight: 600;
-  color: var(--color-accent-blue-light);
-  background: rgba(29, 111, 219, 0.1);
-  border: 1px solid rgba(29, 111, 219, 0.3);
+  color: var(--color-accent-blue);
+  background: var(--color-tint-lime);
+  border: 1px solid var(--color-accent-lime-dark);
   border-radius: var(--radius-full);
   padding: 6px 16px;
   margin-bottom: var(--spacing-xl);
@@ -59,7 +60,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--color-accent-blue-light);
+  background: var(--color-accent-lime-dark);
   animation: pulse 2s infinite;
 }
 
@@ -75,10 +76,10 @@
 }
 
 .accent {
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  position: relative;
+  color: var(--color-accent-blue);
+  background: linear-gradient(180deg, transparent 65%, var(--color-accent-lime) 65%, var(--color-accent-lime) 92%, transparent 92%);
+  padding: 0 4px;
 }
 
 /* Subheadline */
@@ -111,7 +112,7 @@
 }
 
 .highlightIcon {
-  color: var(--color-accent-blue-light);
+  color: var(--color-accent-lime-dark);
   font-size: 1.1rem;
   flex-shrink: 0;
 }

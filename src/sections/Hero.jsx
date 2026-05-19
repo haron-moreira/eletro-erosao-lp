@@ -3,10 +3,10 @@ import WhatsAppButton from '../components/WhatsAppButton'
 import styles from './Hero.module.css'
 
 const HIGHLIGHTS = [
+  'Manutenção e retrofit',
+  'Venda de máquinas',
+  'Peças e consumíveis',
   'Atendimento nacional',
-  'Técnicos especializados',
-  'Suporte rápido',
-  'Preventiva e corretiva',
 ]
 
 export default function Hero() {
@@ -18,19 +18,17 @@ export default function Hero() {
       <div className={`container ${styles.content}`}>
         <div className={styles.badge}>
           <span className={styles.badgeDot} />
-          Especialistas em Eletroerosão EDM
+          Eletroerosão Sérgio Amorim · +7 anos em EDM
         </div>
 
         <h1 className={styles.headline}>
-          Manutenção especializada
-          <br />
-          em máquinas de{' '}
+          Soluções completas para máquinas de{' '}
           <span className={styles.accent}>eletroerosão</span>
         </h1>
 
         <p className={styles.subheadline}>
-          Assistência técnica especializada, manutenção preventiva e corretiva
-          para máquinas EDM. Atendemos todas as marcas e modelos do mercado.
+          Manutenção, retrofit, venda e peças — tudo o que sua máquina EDM precisa
+          em um só lugar. Atendemos todas as marcas, em todo o Brasil.
         </p>
 
         <ul className={styles.highlights}>

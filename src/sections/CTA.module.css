@@ -1,10 +1,8 @@
 .cta {
   position: relative;
   padding: var(--spacing-section) 0;
-  background: linear-gradient(135deg, #0a0e1a 0%, #0d1a30 50%, #0a1525 100%);
+  background: var(--gradient-dark);
   overflow: hidden;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .glow {
@@ -14,7 +12,7 @@
   transform: translateX(-50%);
   width: 900px;
   height: 500px;
-  background: radial-gradient(ellipse at center, rgba(249, 115, 22, 0.1) 0%, transparent 65%);
+  background: radial-gradient(ellipse at center, rgba(197, 220, 77, 0.18) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -26,6 +24,8 @@
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-xl);
+  position: relative;
+  z-index: 1;
 }
 
 .badge {
@@ -36,16 +36,16 @@
   text-transform: uppercase;
   color: var(--color-accent-orange);
   padding: 6px 16px;
-  border: 1px solid rgba(249, 115, 22, 0.4);
+  border: 1px solid rgba(249, 115, 22, 0.45);
   border-radius: var(--radius-full);
-  background: rgba(249, 115, 22, 0.08);
+  background: rgba(249, 115, 22, 0.1);
 }
 
 .headline {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   line-height: 1.15;
-  color: var(--color-text-primary);
+  color: var(--color-text-on-dark);
   letter-spacing: -0.02em;
 }
 
@@ -55,6 +55,6 @@
 
 .description {
   font-size: var(--font-size-lg);
-  color: var(--color-text-secondary);
+  color: rgba(245, 243, 235, 0.75);
   line-height: 1.7;
 }

@@ -1,12 +1,13 @@
 import { MdFactory, MdVerified, MdSupportAgent } from 'react-icons/md'
 import SectionTitle from '../components/SectionTitle'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import oficina from '../assets/about-oficina.webp'
 import styles from './About.module.css'
 
 const STATS = [
-  { icon: MdFactory, value: '15+', label: 'Anos de experiência' },
-  { icon: MdVerified, value: '500+', label: 'Máquinas atendidas' },
-  { icon: MdSupportAgent, value: '24h', label: 'Suporte disponível' },
+  { icon: MdFactory, value: '+7', label: 'Anos de experiência' },
+  { icon: MdVerified, value: '100%', label: 'Focado em EDM' },
+  { icon: MdSupportAgent, value: '24h', label: 'Atendimento emergencial' },
 ]
 
 export default function About() {
@@ -25,10 +26,10 @@ export default function About() {
             />
 
             <p className={styles.paragraph}>
-              Somos especialistas exclusivos em máquinas de eletroerosão (EDM), com mais de 15 anos
-              de experiência no setor industrial. Nossa equipe técnica altamente qualificada atende
+              A <strong>Eletroerosão Sérgio Amorim</strong> é especialista exclusiva em máquinas de
+              eletroerosão (EDM), com mais de 7 anos de atuação no setor industrial. Atendemos
               ferramentarias, metalúrgicas, fabricantes de moldes e indústrias de usinagem em todo
-              o Brasil.
+              o Brasil, a partir da nossa base em São Paulo/SP.
             </p>
 
             <p className={styles.paragraph}>
@@ -50,12 +51,13 @@ export default function About() {
           </div>
 
           <div ref={refRight} className={`reveal--right ${styles.imageCol}`}>
-            <div className={styles.imagePlaceholder}>
-              <div className={styles.imagePlaceholderInner}>
-                <MdFactory className={styles.imagePlaceholderIcon} />
-                <p>Foto da equipe / oficina</p>
-              </div>
-            </div>
+            <img
+              src={oficina}
+              alt="Oficina de manutenção EDM da Eletroerosão Sérgio Amorim"
+              loading="lazy"
+              decoding="async"
+              className={styles.image}
+            />
           </div>
         </div>
       </div>

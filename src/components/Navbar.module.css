@@ -10,10 +10,10 @@
 }
 
 .navbar.scrolled {
-  background: rgba(8, 12, 20, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 1px 0 var(--color-border);
+  background: rgba(250, 249, 245, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 var(--color-border), 0 4px 18px rgba(11, 37, 69, 0.06);
 }
 
 .inner {
@@ -25,15 +25,27 @@
 
 /* Logo */
 .logo {
-  font-size: var(--font-size-xl);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
+  line-height: 0;
+  transition: transform var(--transition-base);
 }
 
-.logoAccent {
-  color: var(--color-accent-blue-light);
+.logo:hover {
+  transform: translateY(-1px);
+}
+
+.logoImg {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .logoImg {
+    height: 44px;
+  }
 }
 
 /* Nav */
