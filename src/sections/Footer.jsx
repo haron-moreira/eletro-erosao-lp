@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MdPhone, MdEmail, MdLocationOn, MdAccessTime } from 'react-icons/md'
+import { MdPhone, MdEmail, MdLocationOn, MdAccessTime, MdVerified } from 'react-icons/md'
 import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { WA_URL } from '../utils/whatsapp'
 import logoPrimary from '../assets/logo-primary.webp'
@@ -36,12 +36,23 @@ export default function Footer() {
         <div className={styles.grid}>
           {/* Brand */}
           <div className={styles.brand}>
-            <a href="#hero" className={styles.logo} aria-label="Eletroerosão Sérgio Amorim">
+            <a href="#hero" className={styles.logo} aria-label="Eletroerosão">
               <span className={styles.logoCard}>
-                <img src={logoPrimary} alt="Eletroerosão Sérgio Amorim" className={styles.logoImg} />
+                <img src={logoPrimary} alt="Eletroerosão" className={styles.logoImg} />
               </span>
               <span className={styles.logoCard}>
-                <img src={logoSecondary} alt="Resitron Eletroerosão" className={styles.logoImg} />
+                <img src={logoSecondary} alt="Resitron" className={styles.logoImg} />
+              </span>
+              <span
+                className={styles.authorizedChip}
+                role="img"
+                aria-label="Assistência técnica autorizada Resitron"
+              >
+                <MdVerified className={styles.authorizedChipIcon} aria-hidden="true" />
+                <span className={styles.authorizedChipText}>
+                  <span className={styles.authorizedChipTitle}>Autorizado</span>
+                  <span className={styles.authorizedChipBrand}>Resitron</span>
+                </span>
               </span>
             </a>
             <p className={styles.tagline}>
@@ -106,7 +117,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p>© {year} Eletroerosão Sérgio Amorim. Todos os direitos reservados.</p>
+          <p>© {year} Eletroerosão. Todos os direitos reservados.</p>
           <p className={styles.bottomRight}>
             Feito por{' '}
             <a

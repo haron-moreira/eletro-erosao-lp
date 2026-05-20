@@ -18,7 +18,7 @@ export default function Hero() {
       <div className={`container ${styles.content}`}>
         <div className={styles.badge}>
           <span className={styles.badgeDot} />
-          Eletroerosão Sérgio Amorim · +7 anos em EDM
+          Eletroerosão · +30 anos em EDM
         </div>
 
         <h1 className={styles.headline}>

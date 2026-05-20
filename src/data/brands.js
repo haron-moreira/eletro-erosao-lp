@@ -1,10 +1,10 @@
 export const brands = [
-  { id: 'agie', name: 'Agie Charmilles' },
-  { id: 'sodick', name: 'Sodick' },
-  { id: 'mitsubishi', name: 'Mitsubishi' },
-  { id: 'fanuc', name: 'Fanuc' },
-  { id: 'chmer', name: 'CHMER' },
-  { id: 'accutex', name: 'Accutex' },
+  { id: 'resitron', name: 'Resitron' },
+  { id: 'engemaq', name: 'Engemaq' },
+  { id: 'ona', name: 'ONA' },
+  { id: 'ibh', name: 'IBH' },
   { id: 'actspark', name: 'ACT Spark' },
-  { id: 'gf', name: 'GF Machining Solutions' },
+  { id: 'eletrocut', name: 'Eletrocut' },
+  { id: 'suprasonic', name: 'Suprasonic' },
+  { id: 'chmer', name: 'CHMER' },
 ]

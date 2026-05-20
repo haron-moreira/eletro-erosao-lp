@@ -29,8 +29,8 @@ export default function Navbar() {
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
-        <a href="#hero" className={styles.logo} onClick={closeMenu} aria-label="Eletroerosão Sérgio Amorim">
-          <img src={logoPrimary} alt="Eletroerosão Sérgio Amorim" className={styles.logoImg} />
+        <a href="#hero" className={styles.logo} onClick={closeMenu} aria-label="Eletroerosão">
+          <img src={logoPrimary} alt="Eletroerosão" className={styles.logoImg} />
         </a>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
